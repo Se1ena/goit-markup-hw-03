@@ -1,3 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -39,6 +55,8 @@
 /* цвет кнопок #F5F4FA */
 
 body {
+    margin: 0;
+
     background-color: #E5E5E5;
     color: var(--primary-text-color);
 
@@ -49,8 +67,18 @@ header {
     background-color: #FFFFFF;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
+
 .list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
 }
 
 /*  Logo */
@@ -123,6 +151,9 @@ header {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Section in index.html and portfolio */
@@ -219,6 +250,12 @@ header {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 10px 32px;
+    min-width: 136px;
+    text-align: center;
 }
 
 .button.primary:hover,
