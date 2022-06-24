@@ -515,12 +515,14 @@ padding-bottom: 94px;
 .project.cards {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 
   border: 1px solid #EEEEEE;
 }
 
 .project .title {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
   color: var(--primary-text-color);
 
@@ -548,4 +550,8 @@ padding-bottom: 94px;
 
 .project .item h2 p {
 border: 1px solid #EEEEEE;
+}
+
+img {
+  display: block;
 }
