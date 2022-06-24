@@ -196,14 +196,12 @@ header {
 /* Hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: #2f303a;
 
   outline: 2px solid tomato;
-}
-
-.container.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero .title {
@@ -282,7 +280,7 @@ header {
   display: none;
 }
 
-.container.section {
+.section.list {
 padding-top: 94px;
 padding-bottom: 94px;
 }
@@ -341,7 +339,7 @@ padding-bottom: 94px;
 
 .list-icons {gap: 30px;}
 
-.container.work {
+.section {
   padding-bottom: 94px;
 }
 
@@ -375,7 +373,7 @@ padding-bottom: 94px;
 
 .team-list {gap: 30px;}
 
-.container.team {
+.section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -414,10 +412,6 @@ padding-bottom: 94px;
 
 /*  Footer */
 
-.page-footer {
-  background-color: #2f303a;
-}
-
 .footer-list .link-adress {
   color: #ffffff;
 
@@ -451,9 +445,11 @@ padding-bottom: 94px;
   padding-bottom: 9px;
 }
 
-.page-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: #2f303a;
 }
 
 
@@ -473,7 +469,7 @@ padding-bottom: 94px;
 
 /*  Кнопки фильтра портфолио */
 
-.button.secondary.all.web.apps.design.marketing {
+.button {
   background-color: var(--secondary-bgc-color-button);
   color: var(--secondary-text-button);
 
@@ -485,84 +481,36 @@ padding-bottom: 94px;
   letter-spacing: 0.03em;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.button :hover,
+.button :focus {
   background-color: var(--primary-bgc-color-button);
   color: var(--primary-text-button);
-}
-
-.button.secondary.all {
-  line-height: 1.62px;
-  
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  border-radius: 4px;
-  padding: 6px 22px;
-  display: inline-block;
-  border: 1px solid transparent;
-}
-
-.button.secondary.web {
-  line-height: 1.62px;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  border-radius: 4px;
-  padding: 6px 22px;
-  display: inline-block;
-  border: 1px solid transparent;
-}
-
-.button.secondary.apps {
-  line-height: 1.62px;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  border-radius: 4px;
-  padding: 6px 22px;
-  display: inline-block;
-  border: 1px solid transparent;
-}
-
-.button.secondary.design {
-  border-radius: 4px;
-  padding: 6px 22px;
-  display: inline-block;
-  border: 1px solid transparent;
-
-  line-height: 1.62px;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.button.secondary.marketing {
-  border-radius: 4px;
-  padding: 6px 22px;
-  display: inline-block;
-  border: 1px solid transparent;
-
-  line-height: 1.62px;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list.button {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-}
 
-.list .item-but {
   padding-right: 8px;
 }
 
+.list.button .item-btn {
+  line-height: 1.62;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
 /* Projects */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .project.cards {
   padding-top: 20px;
